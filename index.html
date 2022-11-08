@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="converter-box">
+            <h2>Currency Converter</h2>
+            <label for="converter">Enter Amount (GHS)</label>
+            <input type="number" id="input" placeholder="">
+            <div class="conversion">
+                <div class="currency-box1">
+                    <label>from</label>
+                    <select name="currency-box1" class="currency">
+                            <option value="" id="fromCedi">GHS</option>
+                    </select>
+                </div>
+                <div class="exchange-sign">
+                    <p>&Equilibrium;</p>
+                </div>
+                <div class="currency-box2">
+                    <label>to</label>
+                    <select name="currency-box2" class="currency" id="currency">
+                        <optgroup>
+                            <option value="" selected disabled>select</option>
+                            <option value="USD" class="otherCurrency">USD</option>
+                            <option value="GBP" class="otherCurrency">GBP</option>
+                            <option value="YEN" class="otherCurrency">YEN</option>
+                            <option value="EUR" class="otherCurrency">EUR</option>
+                            <option value="CFA" class="otherCurrency">CFA</option>
+                            <option value="INR" class="toCurrency">INR</option>
+                            <option value="NGN" class="otherCurrency">NGN</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="output-section">
+                <p id="results">0.00</p>
+            </div>
+            <div class="button-container">
+                <button id="converter">Convert</button>
+                <p id="dev">&copy; dev_twumstine 2022</p>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
